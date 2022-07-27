@@ -1,3 +1,6 @@
+## Salom Umid aka
+
+
 # VueJS practice
 
 Vue.js is an awesome JavaScript Framework for building Frontend Applications, and I aim to learn this framework
