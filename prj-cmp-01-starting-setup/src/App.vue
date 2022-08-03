@@ -1,20 +1,12 @@
 <template>
-  <ul>
-    <learning-resource
-      v-for="resource in resourceData"
-      :key="resource.id"
-      :title="resource.title"
-      :description="resource.description"
-      :link="resource.link"
-    ></learning-resource>
-  </ul>
+  <store-resource :resources="resourceData"></store-resource>
 </template>
 
 <script>
-import LearningResourceVue from './components/learning-resource/LearningResource.vue';
+import StoreResourceVue from './components/learning-resource/StoreResource.vue';
 export default {
   components: {
-    'learning-resource': LearningResourceVue,
+    'store-resource': StoreResourceVue,
   },
   data() {
     return {
@@ -37,4 +29,18 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+</style>
